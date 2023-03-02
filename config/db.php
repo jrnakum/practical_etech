@@ -1,0 +1,17 @@
+<?php 
+
+    ob_start();
+
+    // Set sessions
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+
+    $hostname = "localhost";
+    $username = "root";
+    $password = "root";
+    $dbname = "practicle";
+    
+    $connection = mysqli_connect($hostname, $username, $password, $dbname) or die("Database connection not established.")
+
+?>
